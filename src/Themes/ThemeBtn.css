@@ -1,0 +1,46 @@
+.themeWrapper {
+  position: absolute;
+  top: 26px;
+  margin-left: -100px;
+  background: transparent;
+}
+.themeWrapper button {
+  background: transparent;
+  box-shadow: none;
+}
+.lnr-moon {
+  color: rgb(14, 162, 253);
+}
+
+.lnr-sun {
+  color: rgb(14, 162, 253);
+}
+
+@media (max-width: 1157px) {
+  .themeWrapper {
+    top: 30px;
+    margin-left: -60px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 793px) {
+  .themeWrapper {
+    top: 18px;
+    right: 100px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 22px;
+  }
+
+  /* .lnr-moon,
+  .lnr-sun {
+    z-index: 6;
+  } */
+}
