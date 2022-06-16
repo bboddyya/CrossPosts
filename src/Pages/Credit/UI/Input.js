@@ -2,15 +2,18 @@ import React, { useContext } from "react";
 import "./Input.css";
 import { randomLikes, randomReplies, randomShares } from "./Input-utils";
 import { Context } from "../../../Context";
-import { Link, Route } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Input() {
   const { tasks, setTasks, name, title, setTitle, themeColor, darkMode } =
     useContext(Context);
 
+  const navigate = useNavigate("/tasks");
+
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       addPost();
+      navigate("../task");
     }
   };
   function addPost() {

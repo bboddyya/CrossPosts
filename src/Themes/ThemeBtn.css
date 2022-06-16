@@ -9,11 +9,11 @@
   box-shadow: none;
 }
 .lnr-moon {
-  color: rgb(14, 162, 253);
+  color: rgba(14, 161, 253, 0.916);
 }
 
 .lnr-sun {
-  color: rgb(14, 162, 253);
+  color: rgb(14, 162, 253, 0.916);
 }
 
 @media (max-width: 1157px) {
@@ -30,17 +30,29 @@
 
 @media (max-width: 793px) {
   .themeWrapper {
-    top: 18px;
+    top: 19px;
     right: 100px;
     z-index: 5;
   }
 
   .themeSwitch {
-    font-size: 22px;
+    font-size: 23px;
   }
 
   /* .lnr-moon,
   .lnr-sun {
     z-index: 6;
   } */
+}
+
+@media (max-width: 593px) {
+  .themeWrapper {
+    top: 19px;
+    right: 70px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 15px;
+  }
 }

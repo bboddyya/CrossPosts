@@ -153,3 +153,19 @@ a {
     border: none;
   }
 }
+
+@media (max-width: 593px) {
+  .header-link,
+  .credit {
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 5px;
+  }
+
+  .crossTitle {
+    font-size: 15px;
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+}

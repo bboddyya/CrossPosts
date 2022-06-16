@@ -56,4 +56,32 @@
     font-weight: 300;
     font-size: 20px;
   }
+
+  /* .signIn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  } */
+}
+
+@media (max-width: 593px) {
+  .loginWrapper {
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    font-size: 15px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+  }
+
+  .nameWrapper {
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+  }
+  .loginWrapper a {
+    color: rgb(109, 153, 222);
+    font-weight: 300;
+    font-size: 15px;
+  }
 }

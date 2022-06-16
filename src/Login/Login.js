@@ -19,7 +19,11 @@ function Login() {
   return (
     <div className="loginWrapper">
       <Link to="/profile">
-        {login ? <div className="nameWrapper">{letters(name)}</div> : "Sign in"}
+        {login ? (
+          <div className="nameWrapper">{letters(name)}</div>
+        ) : (
+          <div className="signIn"> Sign in</div>
+        )}
       </Link>
     </div>
   );
