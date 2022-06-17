@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header/Header";
 import { Routes, Route } from "react-router-dom";
 import Credit from "./Pages/Credit/Credit";
@@ -13,12 +13,18 @@ import Login from "./Login/Login";
 import SinglePost from "./Pages/SinglePost/SinglePost";
 
 function App() {
-  const [tasks, setTasks] = useState(defaultPosts);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("posts")) || defaultPosts
+  );
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
   const [postValue, setPostValue] = useState("");
   const [darkMode, setDarkMode] = useState(false);
   const [login, setLogin] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("posts", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <Context.Provider
