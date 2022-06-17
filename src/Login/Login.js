@@ -11,11 +11,11 @@ function Login() {
       .toString()
       .split(" ")
       .filter((e) => e.length > 1);
-    const letters = arr.map((e) => {
+    const firstLettersArray = arr.map((e) => {
       return e[0];
     });
 
-    if (letters.length > 1) {
+    if (firstLettersArray.length > 1) {
       return letters[0] + letters[1];
     } else return letters[0];
   }
