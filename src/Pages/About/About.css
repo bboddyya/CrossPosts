@@ -28,6 +28,13 @@ h1 {
   color: #4eaceae6;
   border-bottom: solid 2px rgb(112, 170, 246);
 }
+@media (max-width: 1271px) {
+  .aboutTitle {
+    width: 90%;
+    font-size: 30px;
+    line-height: 4vw;
+  }
+}
 
 @media (max-width: 793px) {
   .aboutWrapper {

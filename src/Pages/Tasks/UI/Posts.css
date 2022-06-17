@@ -227,3 +227,46 @@ strong {
     font-size: 20px;
   }
 }
+
+@media (max-width: 506px) {
+  .postWrapper a {
+    width: 90%;
+  }
+
+  .post {
+    min-height: 180px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 14px;
+    margin-top: 14px;
+    height: 8px;
+  }
+
+  .postTitle {
+    font-size: 17px;
+  }
+
+  .likesShareRepost {
+    word-spacing: 2px;
+    margin-left: 20px;
+    color: rgb(142, 142, 142);
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .likes,
+  .replies {
+    margin-right: 12px;
+  }
+
+  .pictureWrapper {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+  }
+
+  .pictureWrapper .lnr-user {
+    font-size: 23px;
+  }
+}
