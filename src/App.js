@@ -16,7 +16,9 @@ function App() {
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("posts")) || defaultPosts
   );
-  const [name, setName] = useState("");
+  const [name, setName] = useState(
+    JSON.parse(localStorage.getItem("name")) || ""
+  );
   const [title, setTitle] = useState("");
   const [postValue, setPostValue] = useState("");
   const [darkMode, setDarkMode] = useState(false);
@@ -25,6 +27,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem("posts", JSON.stringify(tasks));
   }, [tasks]);
+
+  useEffect(() => {
+    localStorage.setItem("name", JSON.stringify(name));
+  }, [name]);
 
   return (
     <Context.Provider

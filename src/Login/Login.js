@@ -5,8 +5,12 @@ import { Link } from "react-router-dom";
 
 function Login() {
   const { name, login } = useContext(Context);
+
   function letters(name) {
-    const arr = name.toString().split(" ");
+    const arr = name
+      .toString()
+      .split(" ")
+      .filter((e) => e.length > 1);
     const letters = arr.map((e) => {
       return e[0];
     });
