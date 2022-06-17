@@ -84,4 +84,12 @@
     font-weight: 300;
     font-size: 15px;
   }
+
+  .signIn {
+    position: absolute;
+    font-size: 12px;
+    top: 1px;
+    right: 10px;
+    text-align: center;
+  }
 }

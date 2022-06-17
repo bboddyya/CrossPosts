@@ -97,6 +97,19 @@ textarea::placeholder {
   color: white;
 }
 
+@media (max-width: 1157px) {
+  .input {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .inputPost {
+    min-height: 255px;
+    width: 70%;
+    padding: 15px;
+  }
+}
+
 @media (max-width: 793px) {
   .input {
     width: 100%;
@@ -107,5 +120,47 @@ textarea::placeholder {
     min-height: 255px;
     width: 80%;
     padding: 15px;
+  }
+}
+
+@media (max-width: 565px) {
+  .input {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .inputPost {
+    min-height: 255px;
+    width: 80%;
+    padding: 15px;
+  }
+
+  textarea {
+    height: 40%;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 25px;
+    word-wrap: break-word;
+    background-color: rgb(227, 230, 232);
+    word-wrap: break-word;
+    resize: none;
+    font-size: 25px;
+  }
+  button {
+    width: 40%;
+    height: 20%;
+    display: block;
+    padding: 1.5rem 2rem;
+    transform: translate3d(-4px, -4px, 0);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+    background: rgb(108, 196, 254, 0.9);
+    font-weight: 700;
+    padding: 0;
+    box-shadow: 7px 4px 5px 3px rgba(91, 93, 96, 0.23);
+    color: white;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
   }
 }
