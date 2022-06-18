@@ -10,14 +10,14 @@ function Login() {
     const arr = name
       .toString()
       .split(" ")
-      .filter((e) => e.length > 1);
+      .filter((e) => e.length >= 1);
     const firstLettersArray = arr.map((e) => {
       return e[0];
     });
 
     if (firstLettersArray.length > 1) {
-      return letters[0] + letters[1];
-    } else return letters[0];
+      return firstLettersArray[0] + firstLettersArray[1];
+    } else return firstLettersArray[0];
   }
 
   return (
