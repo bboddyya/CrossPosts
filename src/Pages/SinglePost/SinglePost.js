@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../Context";
 import "./SinglePost.css";
@@ -9,7 +9,9 @@ function SinglePost() {
   const { tasks, darkMode } = useContext(Context);
 
   const { author, title, time, date, likes, replies, shares, picture } =
-    tasks.find((el) => JSON.stringify(el.id) === id) || "";
+    useMemo(() => {
+      return tasks.find((el) => JSON.stringify(el.id) === id);
+    }, [id]);
 
   return (
     <div className="singlePostWrapper">
