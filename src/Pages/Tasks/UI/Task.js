@@ -42,7 +42,7 @@ const Task = ({
           className="postDate"
           style={getDarkMode(darkMode, "likesShareRepost")}
         >
-          {`${time}· ${date}, 2022 `}
+          {`${time} · ${date}, 2022 `}
         </div>
         <div
           className="likesShareRepost"
