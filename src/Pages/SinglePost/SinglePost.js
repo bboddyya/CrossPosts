@@ -20,14 +20,14 @@ function SinglePost() {
           className="singlePostPhoto"
           style={picture ? { display: "block" } : { display: "none" }}
         >
-          {picture ? (
+          {picture && (
             <img
               src={picture}
               alt=""
               className="picture"
               style={getDarkMode(darkMode, "pictureBorder")}
             />
-          ) : null}
+          )}
         </div>
 
         <div className="singlePostName">{author}</div>
