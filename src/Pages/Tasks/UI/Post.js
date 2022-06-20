@@ -4,7 +4,7 @@ import { Context } from "../../../Context";
 import { Link } from "react-router-dom";
 
 function Post() {
-  const { tasks, darkMode, themeColor } = useContext(Context);
+  const { tasks, darkMode, getDarkMode } = useContext(Context);
 
   return (
     <div className="postWrapper">
@@ -23,7 +23,7 @@ function Post() {
           }) => {
             return (
               <Link to={`/tasks/${id}`} key={id}>
-                <div className="post" style={darkMode ? themeColor.post : null}>
+                <div className="post" style={getDarkMode(darkMode, "post")}>
                   <div className="headerWrapper">
                     <div className="pictureWrapper">
                       {picture ? (
@@ -31,12 +31,12 @@ function Post() {
                           src={picture}
                           alt=""
                           className="picture"
-                          style={darkMode ? themeColor.pictureBorder : null}
+                          style={getDarkMode(darkMode, "pictureBorder")}
                         />
                       ) : (
                         <div
                           className="lnr lnr-user profilePicture"
-                          style={darkMode ? themeColor.profilePicture : null}
+                          style={getDarkMode(darkMode, "profilePicture")}
                         />
                       )}
                     </div>
@@ -46,7 +46,7 @@ function Post() {
                   <div className="postTitle">{title}</div>
                   <div
                     className="postDate"
-                    style={darkMode ? themeColor.likesShareRepost : null}
+                    style={getDarkMode(darkMode, "likesShareRepost")}
                   >
                     {time}
                     {" · "}
@@ -54,7 +54,7 @@ function Post() {
                   </div>
                   <div
                     className="likesShareRepost"
-                    style={darkMode ? themeColor.likesShareRepost : null}
+                    style={getDarkMode(darkMode, "likesShareRepost")}
                   >
                     <span className="likes">
                       <strong>{likes}</strong> Лайков

@@ -5,10 +5,18 @@ import { Context } from "../../../Context";
 import { Link, useNavigate } from "react-router-dom";
 
 function Input() {
-  const { tasks, setTasks, name, title, setTitle, themeColor, darkMode } =
-    useContext(Context);
+  const {
+    tasks,
+    setTasks,
+    name,
+    title,
+    setTitle,
+    themeColor,
+    darkMode,
+    getDarkMode,
+  } = useContext(Context);
 
-  const navigate = useNavigate("/tasks");
+  const navigate = useNavigate();
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -45,14 +53,14 @@ function Input() {
           placeholder="What's happening?"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          style={darkMode ? themeColor.textarea : null}
+          style={getDarkMode(darkMode, "textarea")}
           onKeyPress={handleKeyPress}
         />
 
         <button
           className="addButton"
           onClick={addPost}
-          style={darkMode ? themeColor.buttonInput : null}
+          style={getDarkMode(darkMode, "buttonInput")}
         >
           <Link to={"/task"}>ADD NEW!</Link>
         </button>

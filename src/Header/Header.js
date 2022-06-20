@@ -7,12 +7,11 @@ import { Context } from "../Context";
 import ThemeSwitch from "../Themes/ThemeSwitch";
 
 function Header() {
-  const { themeColor, darkMode } = useContext(Context);
+  const { darkMode, getDarkMode } = useContext(Context);
   return (
-    <header style={darkMode ? themeColor.header : null}>
+    <header style={getDarkMode(darkMode, "header")}>
       <ThemeSwitch />
       <Link to="/about">
-        {/* <img src={mops} /> */}
         <div className="crossTitle">Cross Posts</div>
       </Link>
       <TaskButton />

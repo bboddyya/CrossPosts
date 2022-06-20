@@ -11,6 +11,7 @@ import About from "./Pages/About/About";
 import themeColor from "./Themes/themeColor";
 import Login from "./Login/Login";
 import SinglePost from "./Pages/SinglePost/SinglePost";
+import { getDarkMode } from "./Themes/getDarkMode";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -41,12 +42,12 @@ function App() {
         themeColor,
         darkMode,
         setDarkMode,
-        SinglePost,
         login,
         setLogin,
+        getDarkMode,
       }}
     >
-      <div className="App" style={darkMode ? themeColor.body : null}>
+      <div className="App" style={getDarkMode(darkMode, "body")}>
         <Header />
         <Login />
         <Routes>

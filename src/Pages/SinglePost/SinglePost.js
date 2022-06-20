@@ -7,8 +7,17 @@ function SinglePost() {
   const { id } = useParams();
   const { tasks, darkMode, themeColor } = useContext(Context);
 
-  const { author, title, time, date, likes, replies, shares, picture } =
-    tasks.find((el) => JSON.stringify(el.id) === id) || "";
+  const {
+    author,
+    title,
+    time,
+    date,
+    likes,
+    replies,
+    shares,
+    picture,
+    getDarkMode,
+  } = tasks.find((el) => JSON.stringify(el.id) === id) || "";
 
   return (
     <div className="singlePostWrapper">
@@ -22,7 +31,7 @@ function SinglePost() {
               src={picture}
               alt=""
               className="picture"
-              style={darkMode ? themeColor.pictureBorder : null}
+              style={getDarkMode(darkMode, "pictureBorder")}
             />
           ) : null}
         </div>
