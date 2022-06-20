@@ -17,7 +17,8 @@ function Login() {
 
     if (firstLettersArray.length > 1) {
       return firstLettersArray[0] + firstLettersArray[1];
-    } else return firstLettersArray[0];
+    }
+    return firstLettersArray[0];
   }
 
   return (
