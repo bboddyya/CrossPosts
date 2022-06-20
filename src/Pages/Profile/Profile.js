@@ -5,7 +5,9 @@ import "./Profile.css";
 function Profile() {
   const { name, setName, setLogin } = useContext(Context);
 
-  const loginName = () => setLogin(true);
+  const loginName = () => {
+    setLogin(true);
+  };
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       loginName();

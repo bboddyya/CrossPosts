@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./Input.css";
-import { randomLikes, randomReplies, randomShares } from "./Input-utils";
 import { Context } from "../../../Context";
 import { Link, useNavigate } from "react-router-dom";
+import { getTask } from "../getTask";
 
 function Input() {
   const {
@@ -18,6 +18,7 @@ function Input() {
 
   const navigate = useNavigate();
 
+  const changeTitle = (e) => setTitle(e.target.value);
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       addPost();
@@ -25,26 +26,9 @@ function Input() {
     }
   };
   function addPost() {
-    const date = new Date();
-    setTasks([
-      ...tasks,
-      {
-        id: Date.now(),
-        author: name,
-        title: title,
-        date: date.getDate() + " мая",
-        time:
-          date.getHours() +
-          ":" +
-          (date.getMinutes() < 10 ? "0" : "") +
-          date.getMinutes(),
-
-        likes: randomLikes(),
-        replies: randomReplies(),
-        shares: randomShares(),
-      },
-    ]);
+    setTasks([...tasks, getTask(name, title)]);
     setTitle("");
+    console.log(tasks);
   }
   return (
     <div className="input">
@@ -52,7 +36,7 @@ function Input() {
         <textarea
           placeholder="What's happening?"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={changeTitle}
           style={getDarkMode(darkMode, "textarea")}
           onKeyPress={handleKeyPress}
         />

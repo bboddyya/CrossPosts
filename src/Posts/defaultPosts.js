@@ -181,7 +181,6 @@ const defaultPosts = [
       ":" +
       (date.getMinutes() < 10 ? "0" : "") +
       date.getMinutes(),
-
     likes: randomLikes(),
     replies: randomReplies(),
     shares: randomShares(),
