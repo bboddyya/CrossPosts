@@ -38,23 +38,17 @@ function SinglePost() {
 
         <div className="singlePostName">{author}</div>
       </div>
-      <div
-        className="singlePostTitle"
-        style={darkMode ? themeColor.post : null}
-      >
+      <div className="singlePostTitle" style={getDarkMode(darkMode, "post")}>
         {title}
       </div>
-      <div
-        className="postDate"
-        style={darkMode ? themeColor.dateAndlikes : null}
-      >
+      <div className="postDate" style={getDarkMode(darkMode, "dateAndlikes")}>
         {time}
         {" · "}
         {date}, 2022
       </div>
       <div
         className="likesShareRepost"
-        style={darkMode ? themeColor.dateAndlikes : null}
+        style={getDarkMode(darkMode, "dateAndlikes")}
       >
         <span className="likes">
           <strong>{likes}</strong> Лайков

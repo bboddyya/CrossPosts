@@ -1,7 +1,6 @@
 .postWrapper {
   max-width: 88%;
   display: flex;
-  /* justify-content: flex-start; */
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -21,7 +20,6 @@
   box-shadow: 8px 10px 23px 4px rgb(6 14 21 / 20%);
   overflow: hidden;
   flex-direction: column;
-  /* flex-wrap: nowrap; */
   justify-content: space-evenly;
   white-space: nowrap;
   cursor: pointer;
@@ -116,8 +114,6 @@ strong {
   align-items: center;
   width: 40%;
 }
-
-/* Адптив */
 
 @media (max-width: 1620px) {
   .post {

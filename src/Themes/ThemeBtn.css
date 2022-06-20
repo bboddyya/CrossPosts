@@ -38,11 +38,6 @@
   .themeSwitch {
     font-size: 23px;
   }
-
-  /* .lnr-moon,
-  .lnr-sun {
-    z-index: 6;
-  } */
 }
 
 @media (max-width: 593px) {
