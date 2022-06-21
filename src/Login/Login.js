@@ -6,26 +6,24 @@ import { Link } from "react-router-dom";
 function Login() {
   const { name, login } = useContext(Context);
 
-  function letters(name) {
-    const arr = name
-      .toString()
+  const getFirstLetters = (name) => {
+    const firstLetters = name
+      .trim()
       .split(" ")
-      .filter((e) => e.length >= 1);
-    const firstLettersArray = arr.map((e) => {
-      return e[0];
-    });
-
-    if (firstLettersArray.length > 1) {
-      return firstLettersArray[0] + firstLettersArray[1];
+      .map(([el]) => {
+        return el;
+      });
+    if (firstLetters.length > 1) {
+      return firstLetters[0] + firstLetters[1];
     }
-    return firstLettersArray[0];
-  }
+    return firstLetters[0];
+  };
 
   return (
     <div className="loginWrapper">
       <Link to="/profile">
         {login ? (
-          <div className="nameWrapper">{letters(name)}</div>
+          <div className="nameWrapper">{getFirstLetters(name)}</div>
         ) : (
           <div className="signIn"> Sign in</div>
         )}
