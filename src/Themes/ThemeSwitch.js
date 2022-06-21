@@ -6,7 +6,7 @@ function ThemeSwitch() {
   const { darkMode, setDarkMode } = useContext(Context);
 
   function toogleThemeSwitch() {
-    darkMode === false ? setDarkMode(true) : setDarkMode(false);
+    setDarkMode(!darkMode);
   }
 
   return (

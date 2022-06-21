@@ -36,7 +36,7 @@ function SinglePost() {
         {title}
       </div>
       <div className="postDate" style={getDarkMode(darkMode, "dateAndlikes")}>
-        {`${time}· ${date}, 2022 `}
+        {`${time} · ${date}, 2022 `}
       </div>
       <div
         className="likesShareRepost"

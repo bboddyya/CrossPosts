@@ -10,7 +10,7 @@ function Post() {
     <div className="postWrapper">
       {tasks
         .map((props) => {
-          return <Task {...props} />;
+          return <Task {...props} key={props.id} />;
         })
         .reverse()}
     </div>

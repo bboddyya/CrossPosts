@@ -15,8 +15,7 @@ import putin from "./img/putin.jpg";
 import scott from "./img/scott.jpg";
 import twitter from "./img/twitter.png";
 import twitterOwner from "./img/twitterOwner.jpg";
-
-const date = new Date();
+import { getTime, getDayAndMonth } from "./dateUtils";
 
 const defaultPosts = [
   {
@@ -25,12 +24,8 @@ const defaultPosts = [
     author: "Jack Dorsey",
     title:
       "Всем привет,я понял что хочу двигаться в другом направлении. Встречайте, мой новый проект - Cross Posts. Техническим дериктором назначен - Богдан Безуглый.",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -42,12 +37,8 @@ const defaultPosts = [
     author: "Elon Musk",
     title:
       "Только что завершилась моя сделка по полному выкупу прав на язык программирования 1С. Планируем использовать его чуткий синтаксис в новых моделях автопилотов Tesla!",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -58,12 +49,8 @@ const defaultPosts = [
     picture: putin,
     author: "Владимир Путин",
     title: "Вперед Россия!",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: "99",
     replies: "99",
@@ -74,12 +61,8 @@ const defaultPosts = [
     picture: delvon,
     author: "Delvon Lamarr Organ Trio",
     title: "https://www.youtube.com/watch?v=jhicDUgXyNg&ab_channel=KEXP",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -90,12 +73,8 @@ const defaultPosts = [
     picture: scott,
     author: "Michael Scott",
     title: "The city...",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -107,12 +86,8 @@ const defaultPosts = [
     picture: twitter,
     author: "Twitter",
     title: "Ребята, вы реально красавцы, увидимся в суде!)",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -125,12 +100,8 @@ const defaultPosts = [
     author: "Michael Jackson",
     title:
       "Привет это Майкл Джексон. На самом деле я не умер, скиньте  по 600руб на сберОнлайн по номеру телефона, чтобы я мог вернуться в Америку и продолжить выступать.",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -142,12 +113,8 @@ const defaultPosts = [
     picture: biden,
     author: "Joe Biden",
     title: "Кто я",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -158,12 +125,8 @@ const defaultPosts = [
     picture: agarishev,
     author: "Jamez Deann",
     title: "Еду в Питер, я приеду в Питер, и...",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
 
     likes: randomLikes(),
     replies: randomReplies(),
@@ -175,12 +138,8 @@ const defaultPosts = [
     picture: cross,
     author: "Кросс Нации",
     title: "Скоро сами все услышите...",
-    date: date.getDate() + " мая",
-    time:
-      date.getHours() +
-      ":" +
-      (date.getMinutes() < 10 ? "0" : "") +
-      date.getMinutes(),
+    date: getDayAndMonth(),
+    time: getTime(),
     likes: randomLikes(),
     replies: randomReplies(),
     shares: randomShares(),
