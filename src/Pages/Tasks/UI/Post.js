@@ -9,33 +9,9 @@ function Post() {
   return (
     <div className="postWrapper">
       {tasks
-        .map(
-          ({
-            author,
-            title,
-            time,
-            date,
-            likes,
-            replies,
-            shares,
-            id,
-            picture,
-          }) => {
-            return (
-              <Task
-                author={author}
-                title={title}
-                time={time}
-                date={date}
-                likes={likes}
-                replies={replies}
-                shares={shares}
-                id={id}
-                picture={picture}
-              />
-            );
-          }
-        )
+        .map((props) => {
+          return <Task {...props} />;
+        })
         .reverse()}
     </div>
   );
