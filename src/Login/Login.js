@@ -10,13 +10,11 @@ function Login() {
     const firstLetters = name
       .trim()
       .split(" ")
-      .map(([el]) => {
-        return el;
-      });
-    if (firstLetters.length > 1) {
-      return firstLetters[0] + firstLetters[1];
-    }
-    return firstLetters[0];
+      .slice(0, 2)
+      .map(([el]) => el)
+      .join("");
+
+    return firstLetters;
   };
 
   return (
