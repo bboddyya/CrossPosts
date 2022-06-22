@@ -19,7 +19,7 @@ function About() {
         </span>
         from Russia were involved in the development.{" "}
         <Link to="/profile">
-          <span>Try one of the first!</span>
+          <span>Try Cross Posts one of the first!</span>
         </Link>
       </div>
     </div>
