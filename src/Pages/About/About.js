@@ -6,15 +6,21 @@ function About() {
     <div className="aboutWrapper">
       <h1>ABOUT US</h1>
       <div className="aboutTitle">
-        After Twitter was blocked in Russia, millions of people were left
-        without the opportunity to <span>EXPRESS</span> themselves to others, to{" "}
-        <span>SPEAK</span> with others, to <span>TELL</span> others what is
-        happening around them.{" "}
+        After blocking Twitter in Russia, the country's government decided to
+        develop a simple but accessible <span>analogue of Twitter</span> as soon
+        as possible.
+        <span>Jack Dorsey</span>, who recently left his post as CEO of Twitter,
+        and{" "}
+        <span>
+          {" "}
+          <a href="https://github.com/bboddyya" color="#4eaceae6">
+            Bogdan Bezugly
+          </a>{" "}
+        </span>
+        from Russia were involved in the development.{" "}
         <Link to="/profile">
-          <span>CrossPosts</span>
-        </Link>{" "}
-        gives people this opportunity. World leaders, celebrities and ordinary
-        people have already joined us, <span>we only need you!</span>
+          <span>Try one of the first!</span>
+        </Link>
       </div>
     </div>
   );

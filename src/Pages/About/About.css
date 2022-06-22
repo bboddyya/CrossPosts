@@ -28,6 +28,10 @@ h1 {
   color: #4eaceae6;
   border-bottom: solid 2px rgb(112, 170, 246);
 }
+
+.aboutTitle a {
+  color: #4eaceae6;
+}
 @media (max-width: 1271px) {
   .aboutTitle {
     width: 90%;
