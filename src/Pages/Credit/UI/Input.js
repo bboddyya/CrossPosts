@@ -28,7 +28,6 @@ function Input() {
   function addPost() {
     setTasks([...tasks, getTask(name, title)]);
     setTitle("");
-    console.log(tasks);
   }
   return (
     <div className="input">
