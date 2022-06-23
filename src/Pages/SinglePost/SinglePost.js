@@ -18,7 +18,7 @@ function SinglePost() {
       <div className="singlePostHeader">
         <div
           className="singlePostPhoto"
-          style={picture ? { display: "block" } : { display: "none" }}
+          style={{ display: picture ? "block" : "none" }}
         >
           {picture && (
             <img

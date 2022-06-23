@@ -14,7 +14,19 @@ import jackson from "./img/jackson.jpg";
 import putin from "./img/putin.jpg";
 import scott from "./img/scott.jpg";
 import twitter from "./img/twitter.png";
+import bogdan from "./img/bogdan.jpg";
+import drake from "./img/drake.jpg";
+import haisenberg from "./img/haisenberg.jpg";
+import kasparov from "./img/kasparov.jpg";
+import kobb from "./img/kobb.jpg";
+import lennon from "./img/lennon.jpg";
+import mccartney from "./img/mccartney.jpg";
+import mcgregor from "./img/mcGregor.jpg";
+import react from "./img/react.jpg";
+import rockstar from "./img/rockstar.png";
 import twitterOwner from "./img/twitterOwner.jpg";
+import barsick from "./img/barsick.jpg";
+
 import { getTime, getDayAndMonth } from "./dateUtils";
 
 const defaultPosts = [
@@ -44,30 +56,7 @@ const defaultPosts = [
     replies: randomReplies(),
     shares: randomShares(),
   },
-  {
-    id: 12341234,
-    picture: putin,
-    author: "Владимир Путин",
-    title: "Вперед Россия!",
-    date: getDayAndMonth(),
-    time: getTime(),
 
-    likes: "99",
-    replies: "99",
-    shares: "99",
-  },
-  {
-    id: 1234123,
-    picture: delvon,
-    author: "Delvon Lamarr Organ Trio",
-    title: "https://www.youtube.com/watch?v=jhicDUgXyNg&ab_channel=KEXP",
-    date: getDayAndMonth(),
-    time: getTime(),
-
-    likes: randomLikes(),
-    replies: randomReplies(),
-    shares: randomShares(),
-  },
   {
     id: 12343124,
     picture: scott,
@@ -138,6 +127,138 @@ const defaultPosts = [
     picture: cross,
     author: "Кросс Нации",
     title: "Скоро сами все услышите...",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675856552,
+    picture: bogdan,
+    author: "Богдан Безуглый",
+    title: "Отличный старт, продолжаем в том же духе!",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675856553,
+    picture: drake,
+    author: "Drake",
+    title: `Хочу анонсировать свой новый альбом здесь! "Девочки, любимые, как же я вас люблю..." - скоро на всех площадках`,
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675856555,
+    picture: haisenberg,
+    author: "Walter White",
+    title: "купить футболку хайзенберг екатеринбург",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675856556,
+    picture: kasparov,
+    author: "Гарри Каспаров",
+    title: "Кто хочет в шахматы - добавляйтесь.",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675856557,
+    picture: kobb,
+    author: "Dominic Cobb",
+    title: "Всем привет, я только проснулся",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 6758565523,
+    picture: lennon,
+    author: "John Lennon",
+    title: "Peace!",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 6712585655,
+    picture: barsick,
+    author: "Барсик",
+    title: "Поздравляю своего друга с релизом!",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 65532215,
+    picture: rockstar,
+    author: "Rockstar Games",
+    title: "Открываем бета-тест GTA VI для пользователей Cross Post!",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+  {
+    id: 6758565555,
+    picture: mccartney,
+    author: "Paul McCartney",
+    title: "Как же было круто в Битлз!",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 675825655,
+    picture: mcgregor,
+    author: "Conor McGregor",
+    title:
+      "Посмотрел зарплаты Senior Frontend Developer на hh.ru... Надо было кодить.",
+    date: getDayAndMonth(),
+    time: getTime(),
+    likes: randomLikes(),
+    replies: randomReplies(),
+    shares: randomShares(),
+  },
+
+  {
+    id: 6734585655,
+    picture: react,
+    author: "React",
+    title: "Иногда понимаешь, что ради таких проектов и стоит жить дальше!",
     date: getDayAndMonth(),
     time: getTime(),
     likes: randomLikes(),
