@@ -1,0 +1,53 @@
+.themeWrapper {
+  position: absolute;
+  top: 26px;
+  margin-left: -100px;
+  background: transparent;
+}
+.themeWrapper button {
+  background: transparent;
+  box-shadow: none;
+}
+.lnr-moon {
+  color: rgba(14, 161, 253, 0.916);
+}
+
+.lnr-sun {
+  color: rgb(14, 162, 253, 0.916);
+}
+
+@media (max-width: 1157px) {
+  .themeWrapper {
+    top: 30px;
+    margin-left: -60px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 793px) {
+  .themeWrapper {
+    top: 19px;
+    right: 100px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 593px) {
+  .themeWrapper {
+    top: 19px;
+    right: 70px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 15px;
+  }
+}

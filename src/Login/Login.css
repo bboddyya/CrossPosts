@@ -1,0 +1,89 @@
+.loginWrapper {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 20px;
+  transition: all 0.1s ease-in-out;
+  z-index: 10;
+}
+
+.loginWrapper {
+  cursor: pointer;
+}
+
+.loginWrapper a {
+  color: rgb(109, 153, 222);
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.nameWrapper {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: solid 1px rgb(114, 157, 226);
+  color: white;
+  background-color: rgb(114, 157, 226);
+
+  transition: all 0.1s ease-in-out;
+}
+
+.nameWrapper:hover {
+  border: solid 1px white;
+}
+
+@media (max-width: 793px) {
+  .loginWrapper {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    font-size: 20px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+  }
+
+  .nameWrapper {
+    width: 19px;
+    height: 19px;
+    padding: 6px;
+  }
+  .loginWrapper a {
+    color: rgb(109, 153, 222);
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 593px) {
+  .loginWrapper {
+    position: absolute;
+    top: 8px;
+    right: 13px;
+    font-size: 15px;
+    transition: all 0.1s ease-in-out;
+    z-index: 10;
+  }
+
+  .nameWrapper {
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+  }
+  .loginWrapper a {
+    color: rgb(109, 153, 222);
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .signIn {
+    position: absolute;
+    font-size: 12px;
+    top: 1px;
+    right: 10px;
+    text-align: center;
+  }
+}
